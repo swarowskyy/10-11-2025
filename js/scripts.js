@@ -3,68 +3,68 @@
         const products = [
             {
                 id: 1,
-                name: "O Deus que destrói sonhos-Capa dura ",
+                name: "O Deus que destrói sonhos",
                 price: 32.65,
                 image: "image/livro1.png"
             },
             {
                 id: 2,
-                name: "Powerless: 1-Capa comum",
+                name: "Powerless; 1º volume",
                 price: 33.16,
                 image: "image/livro2.png"
             },
             {
                 id: 3,
-                name: "Box A Empregada Capa comum",
+                name: "Box A Empregada",
                 price: 94.99,
                 image: "image/livro3.png"
             },
             {
                 id: 4,
-                name: "Box A Empregada Capa comum",
-                price: 94.99,
+                name: "Todas as suas imperfeições",
+                price: 24.99,
                 image: "image/livro4.png"
             },
             {
                 id: 5,
-                name: "Box A Empregada Capa comum",
-                price: 94.99,
+                name: "Era umas vez um coração partido; 1º volume",
+                price: 36.99,
                 image: "image/livro5.png"
             },
             {
                 id: 6,
-                name: "Box A Empregada Capa comum",
-                price: 94.99,
+                name: "Táticas do amor",
+                price: 15.99,
                 image: "image/livro6.png"
             },
             {
                 id: 7,
-                name: "Box A Empregada Capa comum",
-                price: 94.99,
+                name: "Coisa de Rico",
+                price: 45.99,
                 image: "image/livro7.png"
             },
             {
                 id: 8,
-                name: "Box A Empregada Capa comum",
-                price: 94.99,
+                name: "Biblioteca da meia noite",
+                price: 28.99,
                 image: "image/livro8.png"
             },
             {
                 id: 9,
-                name: "Box A Empregada Capa comum",
+                name: "Quarta Asa",
                 price: 94.99,
                 image: "image/livro9.png"
             },
             {
                 id: 10,
-                name: "Box A Empregada Capa comum",
-                price: 94.99,
+                name: "O príncipe cruel",
+                price: 16.99,
                 image: "image/livro10.png"
             },
             {
                 id: 11,
-                name: "Box A Empregada Capa comum",
-                price: 94.99,
+                name: "A garota que você deixou para trás",
+                price: 29.99,
                 image: "image/livro11.png"
             },
         ];
