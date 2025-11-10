@@ -17,7 +17,55 @@
                 id: 3,
                 name: "Box A Empregada Capa comum",
                 price: 94.99,
-                image: "image/livro 3 2.0.png"
+                image: "image/livro3.png"
+            },
+            {
+                id: 4,
+                name: "Box A Empregada Capa comum",
+                price: 94.99,
+                image: "image/livro4.png"
+            },
+            {
+                id: 5,
+                name: "Box A Empregada Capa comum",
+                price: 94.99,
+                image: "image/livro5.png"
+            },
+            {
+                id: 6,
+                name: "Box A Empregada Capa comum",
+                price: 94.99,
+                image: "image/livro6.png"
+            },
+            {
+                id: 7,
+                name: "Box A Empregada Capa comum",
+                price: 94.99,
+                image: "image/livro7.png"
+            },
+            {
+                id: 8,
+                name: "Box A Empregada Capa comum",
+                price: 94.99,
+                image: "image/livro8.png"
+            },
+            {
+                id: 9,
+                name: "Box A Empregada Capa comum",
+                price: 94.99,
+                image: "image/livro9.png"
+            },
+            {
+                id: 10,
+                name: "Box A Empregada Capa comum",
+                price: 94.99,
+                image: "image/livro10.png"
+            },
+            {
+                id: 11,
+                name: "Box A Empregada Capa comum",
+                price: 94.99,
+                image: "image/livro11.png"
             },
         ];
 

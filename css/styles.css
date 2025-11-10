@@ -49,7 +49,7 @@ header {
 }
 
 .logo span {
-    color: var(--cor-primaria); /* Cor mais escura para o destaque do span */
+    color: var(#FFFFFF); /* Cor mais escura para o destaque do span */
 }
 
 nav ul {
@@ -69,7 +69,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--cor-destaque);
+    color: var( --cor-destaque);
 }
 
 .cart-icon {
@@ -82,7 +82,7 @@ nav ul li a:hover {
     position: absolute;
     top: -8px;
     right: -8px;
-    background-color: var(--cor-primaria);
+    background-color: var( --cor-primaria);
     color: var(--cor-branco);
     border-radius: 50%;
     width: 18px;
@@ -215,7 +215,7 @@ table {
 }
 
 tr, td, th {
-    border: 1px solid var(--cor-destaque);
+    border: 1px solid var( --cor-primaria);
     text-align: left;
     padding: 8px;
 }
