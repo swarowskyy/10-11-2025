@@ -1,10 +1,10 @@
 :root {
-    /* Cores do Tema "Página Amarelada" */
-    --cor-primaria: #8B4513;    /* Marrom-Sépia (para o texto principal e botões) */
-    --cor-secundaria: #A0522D;  /* Marrom-Claro (para o header/nav) */
-    --cor-fundo: #F5DEB3;       /* Creme/Bege (Cor da página amarelada) */
-    --cor-destaque: #CD853F;    /* Bronze/Castanho (para links/hover) */
-    --cor-texto: #4B3621;       /* Marrom Escuro (Texto principal) */
+    /* Cores do Tema "Lilás" */
+    --cor-primaria: #6A5ACD;    /* Lilás Aço Escuro (para o texto principal e botões) */
+    --cor-secundaria: #8A2BE2;  /* Azul Violeta (para o header/nav) */
+    --cor-fundo: #E6E6FA;       /* Lavanda (Cor de fundo da página) */
+    --cor-destaque: #BA55D3;    /* Ametista Média (para links/hover) */
+    --cor-texto: #4B0082;       /* Índigo Escuro (Texto principal) */
     --cor-branco: #FFFFFF;      /* Branco Puro */
 }
 
@@ -45,7 +45,7 @@ header {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--cor-fundo); /* Fundo da página amarelada para o logo principal */
+    color: var(--cor-fundo); /* Fundo da página para o logo principal */
 }
 
 .logo span {
@@ -226,7 +226,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: rgba(160, 82, 45, 0.1); /* Marrom claro muito sutil */
+    background-color: rgba(138, 43, 226, 0.1); /* Azul Violeta (cor-secundaria) muito sutil */
 }
 
 
@@ -312,7 +312,7 @@ tr:nth-child(even) {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(75, 54, 33, 0.5); /* Marrom escuro com transparência */
+    background-color: rgba(75, 0, 130, 0.5); /* Índigo Escuro (cor-texto) com transparência */
     z-index: 999;
     display: none;
 }
