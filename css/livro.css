@@ -1,38 +1,23 @@
 :root {
-    /* Cores do Tema "Página Lilás" */
-    --cor-primaria: #5D3FD3;    /* Lilás Escuro Intenso (botões/destaques) */
-    --cor-secundaria: #8A2BE2;  /* Azul Violeta (header/nav/footer) */
-    --cor-fundo: #E6E6FA;       /* Lavanda (Cor da página lilás/fundo claro) */
-    --cor-destaque: #9932CC;    /* Lilás Médio/Roxo (links/hover/borda) */
-    --cor-texto: #4B0082;       /* Índigo (Texto principal) */
+    /* Cores atualizadas para um esquema de Lilás Suave (baseado em rgb(143, 132, 218)) */
+    --cor-primaria: #6A5ACD;    /* Azul Slate (Usado para títulos, detalhes fortes) */
+    --cor-secundaria: #9370DB;  /* Roxo Médio (Usado para cabeçalho e rodapé) */
+    --cor-destaque: #A89BE6;    /* Lilás Suave (Usado para botões, preços) */
+    --cor-fundo: #F5F5FA;       /* Lavanda Muito Clara / Fundo (Quase Branco) */
+    --cor-texto: #483D8B;       /* Azul Slate Escuro (Texto principal) */
     --cor-branco: #FFFFFF;
-    --cor-sucesso: #228B22;     /* Verde para sucesso */
-    --cor-erro: #DC143C;        /* Vermelho para erro */
 }
-
-
-/* GERAL E RESET */
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Georgia', serif; /* Fonte clássica para o tema livro */
+    font-family: 'Georgia', serif; /* Mantendo o toque clássico do tema */
 }
 
 body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: var(--cor-fundo); /* Manter cor clara para links no header/footer */
-}
-
-a:hover {
-    color: var(--cor-destaque);
 }
 
 
@@ -58,17 +43,16 @@ header {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--cor-fundo);
+    color: var(--cor-fundo); /* Fundo da página para o logo principal */
 }
 
 .logo span {
-    color: var(--cor-primaria);
+    color: var(--cor-branco); /* Cor mais escura para o destaque do span */
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    align-items: center;
 }
 
 nav ul li {
@@ -76,26 +60,27 @@ nav ul li {
 }
 
 nav ul li a {
+    text-decoration: none;
     color: var(--cor-fundo);
     font-weight: 500;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: var(--cor-destaque);
+    color: var( --cor-destaque);
 }
 
 .cart-icon {
     position: relative;
     cursor: pointer;
-    color: var(--cor-fundo);
+    color: var(--cor-fundo); /* Cor do ícone do carrinho */
 }
 
 .cart-count {
     position: absolute;
     top: -8px;
     right: -8px;
-    background-color: var(--cor-primaria);
+    background-color: var( --cor-primaria);
     color: var(--cor-branco);
     border-radius: 50%;
     width: 18px;
@@ -107,15 +92,50 @@ nav ul li a:hover {
 }
 
 
-/* SEÇÕES DE CONTEÚDO (Geral) */
+/* BANNER PRINCIPAL (HERO) */
 
-.products {
-    max-width: 800px;
+.hero {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto); /* Texto escuro no botão de destaque */
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo);
+    transform: translateY(-2px);
+}
+
+
+/* SEÇÕES E PRODUTOS */
+
+.products, #sobre, #fidelidade, #contato {
+    max-width: 1200px;
     margin: 3rem auto;
-    padding: 2rem;
-    background-color: var(--cor-fundo); /* Fundo claro da página */
-    border: 1px solid var(--cor-destaque);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 0 2rem;
 }
 
 .section-title {
@@ -123,102 +143,93 @@ nav ul li a:hover {
     margin-bottom: 2rem;
     font-size: 2rem;
     color: var(--cor-primaria);
-    border-bottom: 2px solid var(--cor-destaque);
-    padding-bottom: 10px;
 }
 
-/* Estilo para parágrafos */
-.products p {
-    font-size: 1.1em;
-    margin-bottom: 1.5rem;
-    text-align: justify;
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
-
-/* SEÇÃO DE CADASTRO (FORMULÁRIO) */
-
-#cadrastro form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
+.product-card {
     background-color: var(--cor-branco);
-    border-radius: 5px;
-    border: 1px solid var(--cor-destaque);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#cadrastro label {
-    font-weight: bold;
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 1.5rem;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
     color: var(--cor-texto);
-    margin-top: 5px;
 }
 
-#cadrastro input[type="text"],
-#cadrastro input[type="email"],
-#cadrastro input[type="tel"],
-#cadrastro input[type="number"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1em;
+.product-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--cor-destaque);
+    margin-bottom: 1rem;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: var(--cor-destaque);
     color: var(--cor-texto);
-    background-color: var(--cor-fundo); /* Fundo sutil */
-}
-
-/* Estilos de Borda do CEP via JavaScript */
-#cep {
-    /* Estilo padrão/inicial */
-    transition: border 0.3s ease;
-}
-/* O JavaScript irá aplicar diretamente:
-   campoCep.style.border = "4px solid green";
-   campoCep.style.border = "4px solid red";
-*/
-
-#cadrastro button {
-    padding: 12px;
-    margin-top: 10px;
     border: none;
     border-radius: 4px;
-    font-size: 1em;
-    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    font-weight: 600;
+    transition: background-color 0.3s;
 }
 
-/* Botão Cadastrar/Submit */
-#cadrastro button:not(#confirmarbotao) {
+.add-to-cart:hover {
     background-color: var(--cor-primaria);
     color: var(--cor-branco);
 }
-#cadrastro button:not(#confirmarbotao):hover {
-    background-color: var(--cor-destaque);
+
+
+/* TABELA DE CONTATO*/ 
+table {
+    margin: 0 auto;
+    width: 70%; /* Aumentado para melhor visualização */
+    border-collapse: collapse;
 }
 
-/* Botão Voltar (Confirmarbotao) */
-#confirmarbotao {
-    background-color: var(--cor-destaque);
-    color: var(--cor-texto);
-    border: 1px solid var(--cor-primaria);
+tr, td, th {
+    border: 1px solid var( --cor-primaria);
+    text-align: left;
+    padding: 8px;
 }
-#confirmarbotao:hover {
+
+th {
     background-color: var(--cor-secundaria);
-    color: var(--cor-branco);
+    color: var(--cor-fundo);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(168, 155, 230, 0.2); /* Lavanda Suave (cor-destaque) com sutil transparência */
 }
 
 
+/* CARRINHO LATERAL (SIDEBAR) */
 
-/* CARRINHO LATERAL (SIDEBAR) - */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(75, 0, 130, 0.5); /* Índigo com transparência */
-    z-index: 999;
-    display: none;
-}
 .cart-sidebar {
     position: fixed;
     top: 0;
@@ -232,7 +243,10 @@ nav ul li a:hover {
     z-index: 1000;
     overflow-y: auto;
 }
-/* ... (outros estilos do carrinho) ... */
+
+.cart-sidebar.active {
+    right: 0;
+}
 
 .cart-header {
     display: flex;
@@ -242,6 +256,7 @@ nav ul li a:hover {
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--cor-destaque);
 }
+
 .close-cart {
     background: none;
     border: none;
@@ -249,6 +264,20 @@ nav ul li a:hover {
     cursor: pointer;
     color: var(--cor-primaria);
 }
+
+.cart-item-price {
+    color: var(--cor-destaque);
+    font-weight: 600;
+}
+
+.cart-item-remove {
+    background: none;
+    border: none;
+    color: var(--cor-primaria);
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
 .cart-total {
     font-size: 1.2rem;
     font-weight: 700;
@@ -256,19 +285,38 @@ nav ul li a:hover {
     margin-bottom: 1.5rem;
     color: var(--cor-primaria);
 }
+
 .checkout-btn {
     width: 100%;
     padding: 1rem;
-    background-color: var(--cor-primaria); /* Cor principal para CTA */
-    color: var(--cor-branco);
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
     border: none;
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 .checkout-btn:hover {
-    background-color: var(--cor-destaque);
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco);
+}
+
+/* Overlay para o carrinho */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(72, 61, 139, 0.5); /* Azul Slate Escuro (cor-texto) com transparência */
+    z-index: 999;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
 }
 
 
@@ -279,7 +327,6 @@ footer {
     color: var(--cor-fundo);
     padding: 3rem 2rem;
     text-align: center;
-    margin-top: 40px; /* Garante que o rodapé não fique colado */
 }
 
 .footer-content {
@@ -314,20 +361,18 @@ footer {
     }
 
     nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
         margin-top: 1rem;
     }
 
-    nav ul li {
-        margin: 0 5px;
-    }
-
-    .products {
-        padding: 1rem;
-    }
-
     .cart-sidebar {
-        width: 100%;
+        width: 300px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
     }
 }

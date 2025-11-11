@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Páginas Amarelas</title>
+    <title> A toca do Leitor</title>
     <link rel="stylesheet" href="css/livros.css">
 </head>
 <body>
     <!-- Cabeçalho -->
     <header>
         <div class="header-container">
-            <div class="logo">Páginas <span>Amarelada</span></div>
+            <div class="logo">A toca <span>do Leitor</span></div>
             <nav>
                 <ul>
                     <li><a href="index.html">Início</a></li>
                     <li><a href="index.html#products">Produtos</a></li>
-                   
+                    <li><a href="#products">Novidades</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                    <li><a href="index.html#fidelidade">Fidelidade</a></li>
                     <li class="cart-icon" id="cart-icon">
                         Carrinho
                         <span class="cart-count" id="cart-count">0</span>
@@ -44,12 +47,27 @@
     </div>
 
     <section id="cadrastro" class="products">
-        <h2 class="section-title">Descrições dos livros:</h2>
+        <h2 class="section-title">Receba nossas promoções!</h2>
+        <p>Cadastre e receba suas promoções.</p>
         <form method="post">
             <label>Nome Completo</label>
             <input type="text" id="nome" placeholder="nome aqui" required>
             <label>E-mail</label>
+            <input type="email" id="email" placeholder="E-mail aqui" required>
+            <label>Número de Telefone</label>
+            <input type="tel" id="telefone" placeholder="telefone aqui" required>
+            <label>CEP</label>
+            <input type="number" id="cep" placeholder="Endereço aqui" required>
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro"> 
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade"> 
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado">
             
+            <button>Cadastrar</button>
             <button type="submit" id="confirmarbotao" class="btn-cadastro">Voltar</button>
 
            
@@ -86,9 +104,9 @@ document.getElementById('confirmarbotao').addEventListener('click', function(eve
 })
     
             </script>
-   
-    <!-- Rodapé -->
-    <section> <id="fidelidade" class="products">
+            
+    </section>
+    <!-- <section id="fidelidade" class="products">
         <h2 class="section-title">Fidelidade</h2>
         <p>Programa de Fidelidade: Toca do Leitor
             O programa Toca do leitor recompensa o cliente por cada passo na construção da sua leitura, garantindo que seja confortavel sempre, "Toca do Leitor".
@@ -96,9 +114,11 @@ document.getElementById('confirmarbotao').addEventListener('click', function(eve
             Como Funciona: Acenda seus Pontos (Páginas)
             O programa é baseado em pontos, chamados de Páginas, que o cliente acumula e troca por recompensas de maior valor (o "Livro").</p>
     </section>
+    -->
+    <!-- Rodapé -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Do fio a Pavio. Todos os direitos reservados.</p>
+            <p>&copy; 2025  A Toca do Leitor. Todos os direitos reservados.</p>
             <div class="footer-links">
                 <a href="#">Política de Privacidade</a>
                 <a href="#">Termos de Serviço</a>
@@ -106,7 +126,7 @@ document.getElementById('confirmarbotao').addEventListener('click', function(eve
             </div>
         </div>
     </footer>
-   <script src="js/scripsts.js"></script>
+   <script src="js/scripts.js"></script>
     
 </body>
 </html>

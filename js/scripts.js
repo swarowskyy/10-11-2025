@@ -3,13 +3,13 @@
         const products = [
             {
                 id: 1,
-                name: "O Deus que destrói sonhos",
+                name: " Manual de assassinato para boas garotas ",
                 price: 32.65,
                 image: "image/livro1.png"
             },
             {
                 id: 2,
-                name: "Powerless; 1º volume",
+                name: " A Filha Perfeita",
                 price: 33.16,
                 image: "image/livro2.png"
             },
@@ -101,6 +101,7 @@
                         <h3 class="product-title">${product.name}</h3>
                         <p class="product-price">R$ ${product.price.toFixed(2)}</p>
                         <a href="livro${product.id}.html">  <button class="add-to-cart">Mais informações</button></a><br>
+                        <a href="livro${product.id}.html">  <button class="add-to-cart">Adicionar ao carrinho</button></a><br>
                     </div>
                 `;
                 productsGrid.appendChild(productCard);
@@ -186,8 +187,8 @@
                     <img src="${item.image}" alt="${item.name}" class="cart-item-image">
                     <div class="cart-item-details">
                         <h4 class="cart-item-title">${item.name}</h4>
-                        <p class="cart-item-price">R$ ${item.price.toFixed(2)} x ${item.quantity}</p>
-                        <button class="cart-item-remove" data-id="${item.id}">Remover</button>
+                        <p class="cart-item-price">R$ ${item.price.toFixed(2)} x ${item.quantity}</p><br>
+                        <br><button class="cart-item-remove" data-id="${item.id}">Remover</button>
                     </div>
                 `;
                 cartItems.appendChild(cartItem);
