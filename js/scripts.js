@@ -101,8 +101,8 @@
                         <h3 class="product-title">${product.name}</h3>
                         <p class="product-price">R$ ${product.price.toFixed(2)}</p>
                         <a href="livro/livro${product.id}.html">  <button class="add-to-cart">Mais informações</button></a><br>
-                        <a href="livro/livro${product.id}.html">  <button class="add-to-cart">Adicionar ao carrinho</button></a><br>
-                    </div>
+                        <button class="add-to-cart" data-id="${product.id}">Adicionar ao Carrinho</button>
+            </div>
                 `;
                 productsGrid.appendChild(productCard);
             });

@@ -189,7 +189,7 @@ nav ul li a:hover {
 
 .add-to-cart {
     width: 100%;
-    padding: 0.7rem;
+    padding: 1.0rem;
     background-color: var(--cor-destaque);
     color: var(--cor-texto);
     border: none;
